@@ -1,0 +1,16 @@
+@import "bulma/css/bulma.css";
+
+.icon {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .has-text-centered-mobile {
+      text-align: center;
+  }
+}
+
+.navbar.is-fixed-top {
+  position: sticky;
+}
