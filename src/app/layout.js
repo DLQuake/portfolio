@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import "bulma/css/bulma.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -21,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
         {children}
