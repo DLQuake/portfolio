@@ -7,18 +7,8 @@ const AboutPage = () => {
             <div className="section">
                 <div className="container">
                     <div className="columns is-vcentered">
-                        <div className="column is-half">
-                            <Image
-                                src="/images/avataaars.svg" // Upewnij się, że ścieżka do zdjęcia jest poprawna
-                                alt="Moje zdjęcie"
-                                width={400}
-                                height={400}
-                                layout="responsive"
-                                priority
-                            />
-                        </div>
-                        <div className="column is-half content">
-                            <h1 className="title has-text-centered">O mnie</h1>
+                        <div className="column is-size-5 is-half content has-text-justified">
+                            <h1 className="title is-size-2 has-text-centered">About me</h1>
                             <p>
                                 I am a Frontend Developer with a passion for creating modern websites.
                                 I have more than a year of experience in the IT industry, mainly in the field
@@ -35,6 +25,15 @@ const AboutPage = () => {
                                 <li>Eager to develop</li>
                                 <li>Open to new challenges and experiences</li>
                             </ul>
+                        </div>
+                        <div className="column is-half">
+                            <Image
+                                src="/images/photo.png"
+                                alt="Moje zdjęcie"
+                                width={571}
+                                height={0}
+                                priority
+                            />
                         </div>
                     </div>
                 </div>
