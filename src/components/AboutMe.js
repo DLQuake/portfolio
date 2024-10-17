@@ -7,19 +7,20 @@ const AboutMe = () => {
                 <div className="columns is-vcentered">
                     <div className="column is-half">
                         <h2 className="title is-size-2 has-text-centered is-uppercase">Let me introduce myself</h2>
-                        <div className='content is-size-5'>
+                        <div className='content is-size-5 has-text-justified'>
                             <p>
-                                I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+                                I am passionate about creating modern web applications and continually expanding my skill set. 💻
                             </p>
                             <p>
-                                I am fluent in classics like <strong>C++, JavaScript, and Go</strong>.
+                                My expertise lies in technologies such as <strong>JavaScript, React, and Next.js</strong>.
                             </p>
                             <p>
-                                My fields of interest are building new web technologies and products and also in areas related to <strong>Blockchain</strong>.
+                                I enjoy exploring innovative solutions and am particularly interested in areas like <strong>Data Science and Machine Learning</strong>.
                             </p>
                             <p>
-                                Whenever possible, I also apply my passion for developing products with <strong>Node.js</strong> and modern JavaScript libraries and frameworks like <strong>React.js and Next.js</strong>.
+                                In addition, I have experience with <strong>Node.js</strong> for backend development, which allows me to build full-stack applications efficiently.
                             </p>
+
                         </div>
                     </div>
 
@@ -27,9 +28,8 @@ const AboutMe = () => {
                         <Image
                             src="/images/avataaars.svg"
                             alt="Twoje zdjęcie"
-                            width={200}
-                            height={200}
-                            layout="responsive"
+                            width={600}
+                            height={0}
                             priority
                         />
                     </div>
