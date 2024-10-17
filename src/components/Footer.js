@@ -1,4 +1,4 @@
-import { FaGlobe } from 'react-icons/fa';
+import { FaEnvelope, FaGlobe } from 'react-icons/fa';
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -14,17 +14,17 @@ const Footer = () => {
                     </div>
 
                     <div className="column has-text-right has-text-centered-mobile">
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="icon">
+                        <a href={process.env.NEXT_PUBLIC_GITHUB_LINK} target="_blank" rel="noopener noreferrer" className="icon">
                             <FaGithub />
                         </a>
-                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="icon">
+                        <a href={process.env.NEXT_PUBLIC_LINKEDIN_LINK} target="_blank" rel="noopener noreferrer" className="icon">
                             <FaLinkedinIn />
                         </a>
-                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="icon">
+                        <a href={process.env.NEXT_PUBLIC_X_LINK} target="_blank" rel="noopener noreferrer" className="icon">
                             <FaXTwitter />
                         </a>
-                        <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer" className="icon">
-                            <FaGlobe />
+                        <a href={`mailto: ${process.env.NEXT_PUBLIC_EMAIL}`} target="_blank" rel="noopener noreferrer" className="icon">
+                            <FaEnvelope />
                         </a>
                     </div>
                 </div>
