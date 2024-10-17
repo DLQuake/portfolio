@@ -1,8 +1,11 @@
-@import "bulma/css/bulma.css";
-
 .icon {
   margin: 0 10px;
   font-size: 24px;
+  color: #404654;
+}
+
+.footer .container .columns .column .icon:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {
@@ -12,5 +15,64 @@
 }
 
 .navbar.is-fixed-top {
-  position: sticky;
+  position: sticky !important;
+}
+
+.navbar {
+  border-bottom: 3px solid #404654;
+}
+
+
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  flex-grow: 1;
+}
+
+.button.is-link {
+  background-color: #007bff;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.button.is-link:hover {
+  background-color: #0056b3;
+}
+
+.wave-emoji {
+  display: inline-block;
+  animation: wave-animation 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(14deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
 }
