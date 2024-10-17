@@ -1,4 +1,4 @@
-"use client"; // Oznaczamy komponent jako klienta
+"use client";
 import Image from 'next/image';
 
 const WelcomeSection = () => {
@@ -7,18 +7,19 @@ const WelcomeSection = () => {
             <div className="container">
                 <div className="columns is-vcentered">
                     <div className="column is-half">
-                        <h1 className="title is-size-2">Hi There! 👋🏻</h1>
+                        <h1 className="title is-size-2">
+                            Hi There! <span className="wave-emoji">👋🏻</span>
+                        </h1>
                         <h2 className="title is-size-2 is-uppercase">I&apos;m Dominik Lewczyński</h2>
                         <p className="title is-size-2">Frontend Developer</p>
                     </div>
 
                     <div className="column is-half">
                         <Image
-                            src="/images/avataaars.svg"
+                            src="/images/draw.png"
                             alt="Twoje zdjęcie"
-                            width={400}
-                            height={300}
-                            layout="responsive"
+                            width={700}
+                            height={0}
                             priority
                         />
                     </div>
