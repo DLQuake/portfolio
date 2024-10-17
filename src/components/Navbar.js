@@ -1,7 +1,8 @@
-"use client"; // Oznaczamy komponent jako klienta
+"use client";
 import { useState } from 'react';
 import Link from 'next/link';
-import { FaHome, FaUser, FaProjectDiagram, FaFileDownload, FaEnvelope } from 'react-icons/fa'; // Importujemy ikony
+import { FaHome, FaUser, FaFileDownload, FaEnvelope, FaTerminal } from 'react-icons/fa'; // Importujemy ikony
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -29,6 +30,7 @@ const Navbar = () => {
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
 
@@ -38,20 +40,21 @@ const Navbar = () => {
 
                     <div className="navbar-end">
                         <Link href="/" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaHome className="icon" /> Strona główna
+                            <FaHome className="icon" /> Home
                         </Link>
                         <Link href="/about" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaUser className="icon" /> O mnie
+                            <FaUser className="icon" /> About
                         </Link>
                         <Link href="/projects" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaProjectDiagram className="icon" /> Projekty
+                            <FaTerminal className="icon" /> Projects
                         </Link>
                         <Link href="/resume" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaFileDownload className="icon" /> Pobierz CV
+                            <FaFileDownload className="icon" /> Resume
                         </Link>
                         <Link href="/contact" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaEnvelope className="icon" /> Kontakt
+                            <FaEnvelope className="icon" /> Contact
                         </Link>
+                        <ThemeSwitcher />
                     </div>
                 </div>
             </div>
