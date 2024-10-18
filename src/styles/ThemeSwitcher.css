@@ -1,6 +1,7 @@
 .theme-switcher {
     display: flex;
     justify-content: flex-end;
+    margin-right: 10px;
 }
 
 .theme-button {
