@@ -1,18 +1,35 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FaHome, FaUser, FaFileDownload, FaEnvelope, FaTerminal } from 'react-icons/fa'; // Importujemy ikony
 import ThemeSwitcher from './ThemeSwitcher';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggleMenu = () => {
         setIsActive(!isActive);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="navbar is-fixed-top pt-5 pb-4">
+        <nav className={`navbar is-fixed-top pt-5 pb-4 ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <div className="navbar-brand">
                     <Link href="/" className="navbar-item is-size-4">
@@ -35,8 +52,7 @@ const Navbar = () => {
                 </div>
 
                 <div id="navbarBasicExample" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
-                    <div className="navbar-start">
-                    </div>
+                    <div className="navbar-start"></div>
 
                     <div className="navbar-end">
                         <Link href="/" className="navbar-item" onClick={() => setIsActive(false)}>
