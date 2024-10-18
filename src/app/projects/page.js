@@ -37,7 +37,7 @@ const Projects = () => {
     if (error) return <p>Error: {error.message}</p>;
 
     return (
-        <div className="section">
+        <div className="section notification">
             <div className="container">
                 <h1 className="title is-size-2 has-text-centered mb-2">My Projects</h1>
                 <h2 className="subtitle is-size-4 has-text-centered mb-6">Here are a few projects ł&apos;ve worked </h2>
@@ -45,26 +45,16 @@ const Projects = () => {
                     {repos.map((repo) => (
                         <div key={repo.id} className="column is-4">
                             <div className="box project-card">
-                                <h3 className="title is-4">{repo.name}</h3>
+                                <h3 className="title is-capitalized is-4">{repo.name.replace(/[-_]/g, ' ')}</h3>
                                 <p>{repo.description || "No description available."}</p>
 
                                 <div className="buttons is-centered mt-4">
-                                    <a
-                                        href={repo.html_url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="button is-link"
-                                    >
+                                    <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="button is-link">
                                         <FaGithub className="mr-1" />
                                         View on GitHub
                                     </a>
                                     {repo.demoUrl && (
-                                        <a
-                                            href={repo.demoUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="button is-info"
-                                        >
+                                        <a href={repo.demoUrl} target="_blank" rel="noopener noreferrer" className="button is-info">
                                             <FaExternalLinkAlt className="mr-1" />
                                             View Demo
                                         </a>
