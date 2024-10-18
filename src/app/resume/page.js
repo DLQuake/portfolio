@@ -1,39 +1,45 @@
-"use client"; // Oznaczamy komponent jako klienta
-import React from "react";
-import { AiOutlineDownload } from "react-icons/ai";
+"use client";
+import React, { useState } from "react";
+import { pdfjs, Document, Page } from "react-pdf";
+import DownloadCVButton from "@/components/DownloadCVButton";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+    'pdfjs-dist/build/pdf.worker.min.mjs',
+    import.meta.url,
+).toString();
 
 const Resume = () => {
+    const pdfUrl = "/Dominik_Lewczyński_CV.pdf";
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
+
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+    }
+
     return (
-        <div className="section">
-            <div className="container">
-                <div className="buttons is-centered mb-5">
-                    <a
-                        href="/Dominik_Lewczyński_CV.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="button is-link"
-                    >
-                        <AiOutlineDownload /> Download CV
-                    </a>
-                </div>
-                <div className="content has-text-centered">
-                    <iframe
-                        src="/Dominik_Lewczyński_CV.pdf"
-                        width="100%"
-                        height="1100px"
-                        style={{ border: 'none' }}
-                    />
-                </div>
-                <div className="buttons is-centered mb-5">
-                    <a
-                        href="/Dominik_Lewczyński_CV.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="button is-link"
-                    >
-                        <AiOutlineDownload /> Download CV
-                    </a>
-                </div>
+        <div className="hero notification p-0 mb-0">
+            <div className="hero-body p-0">
+                <DownloadCVButton pdfUrl={pdfUrl} />
+
+                <Document file={pdfUrl} onLoadSuccess={onDocumentLoadSuccess}>
+                    <div >
+                        {numPages && (
+                            <>
+                                <div>
+                                    <Page className="box" pageNumber={pageNumber} scale={1.5} />
+                                </div>
+                                <div style={{ marginTop: '20px' }}>
+                                    {pageNumber + 1 <= numPages && (
+                                        <Page className="box" pageNumber={pageNumber + 1} scale={1.5} />
+                                    )}
+                                </div>
+                            </>
+                        )}
+                    </div>
+                </Document>
+
+                <DownloadCVButton pdfUrl={pdfUrl} />
             </div>
         </div>
     );
