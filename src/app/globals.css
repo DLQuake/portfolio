@@ -1,7 +1,16 @@
+[data-theme="light"]
+.footer .container .columns .column .icon {
+  color: #2e333d;
+}
+
+[data-theme="dark"]
+.footer .container .columns .column .icon {
+  color: #abb1bf;
+}
+
 .icon {
   margin: 0 10px;
   font-size: 24px;
-  color: #404654;
 }
 
 .footer .container .columns .column .icon:hover {
@@ -14,12 +23,16 @@
   }
 }
 
-.navbar.is-fixed-top {
-  position: sticky !important;
+.mainpadding {
+  padding-top: 80px;
 }
 
 .navbar {
-  border-bottom: 3px solid #404654;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  opacity: 0.9;
 }
 
 
@@ -75,4 +88,14 @@
 
 .skill-card:hover {
   transform: translateY(-5px);
+}
+
+.react-pdf__Document {
+  display: flex;
+  justify-content: center;
+}
+
+.react-pdf__Page__textContent,
+.react-pdf__Page__annotations {
+  margin: 20px;
 }
