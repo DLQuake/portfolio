@@ -7,18 +7,13 @@ const AboutMe = () => {
                 <div className="columns is-vcentered">
                     <div className="column is-half">
                         <h2 className="title is-size-2 has-text-centered is-uppercase">Let me introduce myself</h2>
-                        <div className='content is-size-5 has-text-justified'>
+                        <div className='content is-size-5 has-text-centered'>
                             <p>
-                                I am passionate about creating modern web applications and continually expanding my skill set. 💻
-                            </p>
-                            <p>
-                                My expertise lies in technologies such as <strong>JavaScript, React, and Next.js</strong>.
-                            </p>
-                            <p>
-                                I enjoy exploring innovative solutions and am particularly interested in areas like <strong>Data Science and Machine Learning</strong>.
-                            </p>
-                            <p>
-                                In addition, I have experience with <strong>Node.js</strong> for backend development, which allows me to build full-stack applications efficiently.
+                                Hi! My name is Dominik, and I am passionate about creating modern web applications.
+                                I am fascinated by the world of frontend development, and my goal is to continuously improve myself as a skilled Frontend Developer.
+                                Every day, I dedicate time to learning in order to stay up-to-date with the latest trends and technological solutions.
+                                I love exploring innovative approaches to problem-solving.
+                                Besides programming, I am also interested in Astronomy and Aviation.
                             </p>
 
                         </div>
