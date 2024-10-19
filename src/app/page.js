@@ -1,8 +1,6 @@
-import Navbar from '../components/Navbar';
 import WelcomeSection from '../components/WelcomeSection';
 import AboutMe from '../components/AboutMe';
 import ConnectWithMe from '../components/ConnectWithMe';
-import Footer from '../components/Footer'; // Importujemy komponent Footer
 
 export default function Home() {
   return (
