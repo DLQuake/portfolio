@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="navbar-brand">
                     <Link href="/" className="navbar-item is-size-4">
-                        Dominik Lewczyński
+                        {process.env.NEXT_PUBLIC_NAME_SURNAME}
                     </Link>
 
                     <a

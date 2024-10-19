@@ -10,8 +10,8 @@ const WelcomeSection = () => {
                         <h1 className="title is-size-2">
                             Hi There! <span className="wave-emoji">👋🏻</span>
                         </h1>
-                        <h2 className="title is-size-2 is-uppercase">I&apos;m Dominik Lewczyński</h2>
-                        <p className="title is-size-2">Frontend Developer</p>
+                        <h2 className="title is-size-2 is-uppercase">I&apos;m {process.env.NEXT_PUBLIC_NAME_SURNAME}</h2>
+                        <p className="title is-size-2">{process.env.NEXT_PUBLIC_JOB}</p>
                     </div>
 
                     <div className="column is-half">
