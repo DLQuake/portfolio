@@ -4,7 +4,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import '../styles/ThemeSwitcher.css';
 
 function ThemeSwitcher() {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("");
 
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
