@@ -9,7 +9,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 const Resume = () => {
-    const pdfUrl = "/Dominik_Lewczyński_CV.pdf";
+    const pdfUrl = "/documents/Dominik_Lewczyński_CV.pdf";
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 
