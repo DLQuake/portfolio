@@ -35,6 +35,10 @@
   opacity: 0.9;
 }
 
+.navbartools {
+  display: flex;
+  justify-content: center;
+}
 
 .project-card {
   height: 100%;
@@ -84,6 +88,10 @@
   50% { transform: rotate(-4deg); }
   60% { transform: rotate(10deg); }
   100% { transform: rotate(0deg); }
+}
+
+.skill-card {
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .skill-card:hover {
