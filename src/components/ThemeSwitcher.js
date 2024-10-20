@@ -23,7 +23,7 @@ function ThemeSwitcher() {
     };
 
     return (
-        <div className="theme-switcher has-text-right">
+        <div className="theme-switcher">
             <button className="button is-small theme-button" onClick={toggleTheme}>
                 {theme === "light" ? (
                     <FaMoon size={24} color="#6a0dad" />
