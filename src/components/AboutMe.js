@@ -1,21 +1,16 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const AboutMe = () => {
+    const t = useTranslations('HomePage');
     return (
         <section className="section notification">
             <div className="container">
                 <div className="columns is-vcentered">
                     <div className="column is-half">
-                        <h2 className="title is-size-2 has-text-centered is-uppercase">Let me introduce myself</h2>
+                        <h2 className="title is-size-2 has-text-centered is-uppercase">{t("AboutMeSection.title")}</h2>
                         <div className='content is-size-5 has-text-centered'>
-                            <p>
-                                Hi! My name is Dominik, and I am passionate about creating modern web applications.
-                                I am fascinated by the world of frontend development, and my goal is to continuously improve myself as a skilled Frontend Developer.
-                                Every day, I dedicate time to learning in order to stay up-to-date with the latest trends and technological solutions.
-                                I love exploring innovative approaches to problem-solving.
-                                Besides programming, I am also interested in Astronomy and Aviation.
-                            </p>
-
+                            <p>{t("AboutMeSection.content")}</p>
                         </div>
                     </div>
 

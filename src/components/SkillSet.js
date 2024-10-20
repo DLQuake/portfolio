@@ -3,6 +3,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import { GiMaterialsScience } from "react-icons/gi";
 import { SiBem, SiBulma, SiExpress, SiFigma, SiFlask, SiJquery, SiMysql, SiPostgresql, SiPostman, SiVercel, SiVite } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { useTranslations } from "next-intl";
 
 const skillCategories = [
     {
@@ -48,7 +49,7 @@ const skillCategories = [
         ],
     },
     {
-        category: "Methodologies ",
+        category: "Methodologies",
         skills: [
             { name: "BEM", icon: <SiBem /> },
         ],
@@ -56,15 +57,16 @@ const skillCategories = [
 ];
 
 const SkillSet = () => {
+    const t = useTranslations('AboutPage');
     return (
         <div className="section notification mb-0">
             <div className="container">
-                <h2 className="title is-size-2 has-text-centered">Skills</h2>
+                <h2 className="title is-size-2 has-text-centered">{t("skills.title")}</h2>
 
                 <div className="columns">
                     {skillCategories.map((category, categoryIndex) => (
                         <div key={categoryIndex} className="column">
-                            <h3 className="subtitle is-size-3 has-text-centered">{category.category}</h3>
+                            <h3 className="subtitle is-size-3 has-text-centered">{t(`skills.${category.category}`)}</h3>
                             <div className="is-multiline">
                                 {category.skills.map((skill, skillIndex) => (
                                     <div key={skillIndex} className="column skill-card">

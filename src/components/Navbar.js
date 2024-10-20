@@ -1,12 +1,14 @@
 "use client";
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { FaHome, FaUser, FaFileDownload, FaEnvelope, FaTerminal } from 'react-icons/fa'; // Importujemy ikony
 import ThemeSwitcher from './ThemeSwitcher';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const t = useTranslations('Navbar');
 
     const toggleMenu = () => {
         setIsActive(!isActive);
@@ -29,12 +31,12 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`navbar is-fixed-top pt-5 pb-4 ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar is-fixed-top py-5 ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <div className="navbar-brand">
-                    <Link href="/" className="navbar-item is-size-4">
+                    <a href="/" className="navbar-item is-size-4">
                         {process.env.NEXT_PUBLIC_NAME_SURNAME}
-                    </Link>
+                    </a>
 
                     <a
                         role="button"
@@ -55,22 +57,25 @@ const Navbar = () => {
                     <div className="navbar-start"></div>
 
                     <div className="navbar-end">
-                        <Link href="/" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaHome className="icon" /> Home
-                        </Link>
-                        <Link href="/about" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaUser className="icon" /> About
-                        </Link>
-                        <Link href="/projects" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaTerminal className="icon" /> Projects
-                        </Link>
-                        <Link href="/resume" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaFileDownload className="icon" /> Resume
-                        </Link>
-                        <Link href="/contact" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaEnvelope className="icon" /> Contact
-                        </Link>
-                        <ThemeSwitcher />
+                        <a href="/" className="navbar-item" onClick={() => setIsActive(false)}>
+                            <FaHome className="icon" /> {t('home')}
+                        </a>
+                        <a href="/about" className="navbar-item" onClick={() => setIsActive(false)}>
+                            <FaUser className="icon" /> {t('about')}
+                        </a>
+                        <a href="/projects" className="navbar-item" onClick={() => setIsActive(false)}>
+                            <FaTerminal className="icon" /> {t('projects')}
+                        </a>
+                        <a href="/resume" className="navbar-item" onClick={() => setIsActive(false)}>
+                            <FaFileDownload className="icon" /> {t('resume')}
+                        </a>
+                        <a href="/contact" className="navbar-item" onClick={() => setIsActive(false)}>
+                            <FaEnvelope className="icon" /> {t('contact')}
+                        </a>
+                        <div className='navbartools'>
+                            <ThemeSwitcher />
+                            <LanguageSwitcher />
+                        </div>
                     </div>
                 </div>
             </div>

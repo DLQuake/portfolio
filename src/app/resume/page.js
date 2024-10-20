@@ -2,14 +2,13 @@
 import React, { useState } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
 import DownloadCVButton from "@/components/DownloadCVButton";
+import { useTranslations } from "next-intl";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Resume = () => {
-    const pdfUrl = "/documents/Dominik_Lewczyński_CV.pdf";
+    const t = useTranslations('ResumePage');
+    const pdfUrl = t("document");
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 

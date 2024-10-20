@@ -1,0 +1,74 @@
+{
+    "HomePage": {
+        "WelcomeSection": {
+            "Hi": "Hi There!",
+            "me": "I'm"
+        },
+        "AboutMeSection": {
+            "title": "Let me introduce myself",
+            "content": "Hi! My name is Dominik, and I am passionate about creating modern web applications. I am fascinated by the world of frontend development, and my goal is to continuously improve myself as a skilled Frontend Developer. Every day, I dedicate time to learning in order to stay up-to-date with the latest trends and technological solutions. I love exploring innovative approaches to problem-solving. Besides programming, I am also interested in Astronomy and Aviation."
+        },
+        "ConnectWithMeSection": {
+            "title": "Find me on",
+            "subtitle": "Feel free to connect with me"
+        }
+    },
+    "AboutPage": {
+        "aboutsection": {
+            "title1": "Hello everyone, my name is Dominik!",
+            "title2": "I am a Frontend Developer.",
+            "aboutme": {
+                "subtitle": "About Me",
+                "content": "I am a Frontend Developer with a passion for creating modern websites. I have over a year of experience in the IT industry, mainly in the field of technology, information, and the Internet. I graduated with a Master's degree in Computer Science from the University of Warmia and Mazury in Olsztyn, specializing in \"Data Science in practice.\"; I am a person who is organized and focused on achieving goals, communicative, eager to develop, and open to new challenges and experiences."
+            },
+            "hobby": {
+                "subtitle": "Hobbies",
+                "content": "Besides my professional interests, I am passionate about new technologies. Additionally, I have an interest in astronomy and aviation. These areas not only intrigue me but also motivate me to continue learning and exploring."
+            }
+        },
+        "skills": {
+            "title": "Skills",
+            "Frontend": "Frontend",
+            "Backend": "Backend",
+            "Tools": "Tools",
+            "Databases": "Databases",
+            "Methodologies": "Methodologies"
+        }
+    },
+    "ProjectsPage": {
+        "title": "My Projects",
+        "subtitle": "Here are a few projects I've worked",
+        "github": "View on GitHub",
+        "demo": "View Demo"
+    },
+    "ResumePage": {
+        "button": "Download CV",
+        "document": "/documents/Dominik_Lewczyński_CV_EN_Version.pdf"
+    },
+    "ContactPage": {
+        "title": "Contact",
+        "contactform": {
+            "fullname": "Full name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "button": "Send a Message"
+        },
+        "contactinformation": {
+            "title": "Contact Information",
+            "namesurname": "Name and surname",
+            "email": "Email",
+            "phone": "Phone",
+            "linkedin": "LinkedIn",
+            "github": "GitHub",
+            "x": "X"
+        }
+    },
+    "Navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "resume": "Resume",
+        "contact": "Contact"
+    }
+}
