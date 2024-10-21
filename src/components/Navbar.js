@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { FaHome, FaUser, FaFileDownload, FaEnvelope, FaTerminal } from 'react-icons/fa'; // Importujemy ikony
+import { FaHome, FaUser, FaFileDownload, FaEnvelope, FaTerminal } from 'react-icons/fa';
 import ThemeSwitcher from './ThemeSwitcher';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';

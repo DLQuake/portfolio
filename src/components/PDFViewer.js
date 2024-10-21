@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
 
-// Konfiguracja workera PDFJS
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const PDFViewer = ({ pdfUrl }) => {
