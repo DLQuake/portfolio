@@ -98,6 +98,12 @@
   transform: translateY(-5px);
 }
 
+.pdfreact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .react-pdf__Document {
   display: flex;
   justify-content: center;
