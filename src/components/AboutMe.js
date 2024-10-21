@@ -21,6 +21,7 @@ const AboutMe = () => {
                             width={600}
                             height={0}
                             priority
+                            style={{ width: '100%' }}
                         />
                     </div>
                 </div>

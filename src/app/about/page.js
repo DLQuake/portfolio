@@ -24,6 +24,7 @@ const AboutPage = () => {
                                 width={571}
                                 height={0}
                                 priority
+                                style={{ width: '100%' }}
                             />
                         </div>
                     </div>

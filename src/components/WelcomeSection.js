@@ -24,6 +24,7 @@ const WelcomeSection = () => {
                             width={700}
                             height={0}
                             priority
+                            style={{ width: '100%' }}
                         />
                     </div>
                 </div>
