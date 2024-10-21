@@ -1,11 +1,15 @@
 [data-theme="light"]
 .footer .container .columns .column .icon {
-  color: #2e333d;
+  color: #2e333d !important;
 }
 
 [data-theme="dark"]
 .footer .container .columns .column .icon {
-  color: #abb1bf;
+  color: #abb1bf !important;
+}
+
+.navbar-item {
+  display: flex;
 }
 
 .icon {
@@ -38,6 +42,8 @@
 .navbartools {
   display: flex;
   justify-content: center;
+  margin-left: 10px;
+  gap: 10px;
 }
 
 .project-card {
