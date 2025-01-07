@@ -24,7 +24,7 @@ function ThemeSwitcher() {
 
     return (
         <div className="theme-switcher">
-            <button className="button is-small theme-button" onClick={toggleTheme}>
+            <button className="button is-small theme-button" aria-label="Theme switcher" onClick={toggleTheme}>
                 {theme === "light" ? (
                     <FaMoon size={24} color="#6a0dad" />
                 ) : (

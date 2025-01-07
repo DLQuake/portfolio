@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
 
     return (
         <div className="select is-medium languageswitcher">
-            <select value={selectedLanguage} onChange={handleChange}>
+            <select aria-label="Change a language" value={selectedLanguage} onChange={handleChange}>
                 <option value="en">English</option>
                 <option value="pl">Polski</option>
             </select>
