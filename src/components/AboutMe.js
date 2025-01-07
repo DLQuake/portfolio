@@ -17,7 +17,7 @@ const AboutMe = () => {
                     <div className="column is-half">
                         <Image
                             src="/images/avataaars.svg"
-                            alt="Twoje zdjęcie"
+                            alt="My avatar"
                             width={600}
                             height={0}
                             priority
