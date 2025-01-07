@@ -19,8 +19,8 @@ const AboutPage = () => {
                         </div>
                         <div className="column is-half">
                             <Image
-                                src="/images/photo.png"
-                                alt="Moje zdjęcie"
+                                src="/images/MyPhoto.svg"
+                                alt="My photo"
                                 width={571}
                                 height={0}
                                 priority
