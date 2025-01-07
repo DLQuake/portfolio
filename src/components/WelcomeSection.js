@@ -11,7 +11,7 @@ const WelcomeSection = () => {
                 <div className="columns is-vcentered">
                     <div className="column is-half">
                         <h1 className="title is-size-2">
-                        {t("WelcomeSection.Hi")} <span className="wave-emoji">👋🏻</span>
+                            {t("WelcomeSection.Hi")} <span className="wave-emoji">&#128075;</span>
                         </h1>
                         <h2 className="title is-size-2 mb-6 is-uppercase">{t("WelcomeSection.me")} {process.env.NEXT_PUBLIC_NAME_SURNAME}</h2>
                         <p className="title is-size-2">{process.env.NEXT_PUBLIC_JOB}</p>
@@ -19,9 +19,9 @@ const WelcomeSection = () => {
 
                     <div className="column is-half">
                         <Image
-                            src="/images/draw.png"
-                            alt="Twoje zdjęcie"
-                            width={700}
+                            src="/images/Source code-amico.svg"
+                            alt="Picture of computer"
+                            width={500}
                             height={0}
                             priority
                             style={{ width: '100%' }}
