@@ -36,6 +36,7 @@
         }
     },
     "ProjectsPage": {
+        "error": "Ups! Wygląda na to, że projekty postanowiły zrobić sobie przerwę. Wracaj wkrótce!",
         "title": "Moje Projekty",
         "subtitle": " Oto kilka projektów, nad którymi pracowałem",
         "github": "Zobacz na GitHub",

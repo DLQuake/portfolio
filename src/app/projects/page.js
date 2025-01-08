@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Projects = () => {
     const [repos, setRepos] = useState([]);
@@ -35,8 +36,35 @@ const Projects = () => {
         fetchRepos();
     }, []);
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error.message}</p>;
+    if (loading) {
+        return (
+            <div className="hero notification is-fullheight">
+                <div className="hero-body">
+                    <div className="container has-text-centered">
+                        <Image
+                            src="/images/tube-spinner.svg"
+                            alt="Loading"
+                            className="spinner"
+                            width={300}
+                            height={300}
+                            priority
+                        />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    if (error) {
+        return (
+            <div className="hero notification is-fullheight">
+                <div className="hero-body">
+                    <div className="container has-text-centered">
+                        <p className="title">{t("error")}</p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="section notification">
@@ -47,8 +75,16 @@ const Projects = () => {
                     {repos.map((repo) => (
                         <div key={repo.id} className="column is-4">
                             <div className="box project-card">
-                                <h3 className="title is-capitalized is-4">{repo.name.replace(/[-_]/g, ' ')}</h3>
-                                <p className="mb-5">{repo.description || "No description available."}</p>
+                                <Image
+                                    src={`https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`}
+                                    alt={`${repo.name} preview`}
+                                    className="project-image mb-4"
+                                    width={384}
+                                    height={192}
+                                    priority
+                                />
+                                <h3 className="title has-text-centered is-capitalized is-4">{repo.name.replace(/[-_]/g, ' ')}</h3>
+                                <p className="mb-5 ">{repo.description || "No description available."}</p>
 
                                 <div className="buttons is-centered mt-4">
                                     <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="button is-link">
