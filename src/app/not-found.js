@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
     return (
-        <section className="hero is-fullheight">
+        <section className="hero notification is-fullheight">
             <div className="hero-body">
                 <div className="container has-text-centered">
                     <h1 className="title is-1">404</h1>

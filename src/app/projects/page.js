@@ -4,6 +4,7 @@ import axios from "axios";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Preloader from "@/components/Preloader";
 
 const Projects = () => {
     const [repos, setRepos] = useState([]);
@@ -37,22 +38,7 @@ const Projects = () => {
     }, []);
 
     if (loading) {
-        return (
-            <div className="hero notification is-fullheight">
-                <div className="hero-body">
-                    <div className="container has-text-centered">
-                        <Image
-                            src="/images/tube-spinner.svg"
-                            alt="Loading"
-                            className="spinner"
-                            width={300}
-                            height={300}
-                            priority
-                        />
-                    </div>
-                </div>
-            </div>
-        );
+        return <Preloader/>
     }
     if (error) {
         return (

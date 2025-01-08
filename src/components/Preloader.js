@@ -1,10 +1,21 @@
 import React from 'react';
-import styles from '../styles/Preloader.css';
+import Image from 'next/image';
 
 const Preloader = () => {
     return (
-        <div className={styles.preloader}>
-            <div className={styles.spinner}></div>
+        <div className="hero notification is-fullheight">
+            <div className="hero-body">
+                <div className="container has-text-centered">
+                    <Image
+                        src="/images/tube-spinner.svg"
+                        alt="Loading"
+                        className="spinner"
+                        width={300}
+                        height={300}
+                        priority
+                    />
+                </div>
+            </div>
         </div>
     );
 };
