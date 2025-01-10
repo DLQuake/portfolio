@@ -1,7 +1,6 @@
 import { FaReact, FaJsSquare, FaNode, FaGitAlt, FaPython, FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaWordpress } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { GiMaterialsScience } from "react-icons/gi";
-import { SiBem, SiBulma, SiExpress, SiFigma, SiFlask, SiJquery, SiMysql, SiPostgresql, SiPostman, SiVercel, SiVite } from "react-icons/si";
+import { SiBem, SiBulma, SiExpress, SiFigma, SiFlask, SiJquery, SiMysql, SiNpm, SiPhpmyadmin, SiPostgresql, SiPostman, SiVercel, SiVite } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { useTranslations } from "next-intl";
 
@@ -39,6 +38,8 @@ const skillCategories = [
             { name: "Postman", icon: <SiPostman /> },
             { name: "WordPress", icon: <FaWordpress /> },
             { name: "Vercel", icon: <SiVercel /> },
+            { name: "NPM", icon: <SiNpm /> },
+            { name: "PhpMyAdmin", icon: <SiPhpmyadmin /> },
         ],
     },
     {
@@ -70,7 +71,7 @@ const SkillSet = () => {
                             <div className="is-multiline">
                                 {category.skills.map((skill, skillIndex) => (
                                     <div key={skillIndex} className="column skill-card">
-                                        <div className="box has-text-centered">
+                                        <div className="box is-1 has-text-centered">
                                             <div className="icon is-size-1 is-large">{skill.icon}</div>
                                             <p className="title">{skill.name}</p>
                                         </div>
