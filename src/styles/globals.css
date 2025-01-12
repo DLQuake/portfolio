@@ -58,7 +58,7 @@
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -105,7 +105,7 @@
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 .pdfreact {
@@ -122,4 +122,18 @@
 .react-pdf__Page__textContent,
 .react-pdf__Page__annotations {
   margin: 20px;
+}
+
+[data-theme="light"]
+.contact_links {
+  color: hsl(0, 0%, 29%) !important
+}
+
+[data-theme="dark"]
+.contact_links {
+  color: hsl(0, 0%, 71%) !important;
+}
+
+.contact_links:hover {
+  opacity: 0.8;
 }
