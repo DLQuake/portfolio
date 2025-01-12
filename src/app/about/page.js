@@ -6,7 +6,7 @@ const AboutPage = () => {
     const t = useTranslations('AboutPage');
     return (
         <>
-            <div className="section">
+            <section className="section">
                 <div className="container">
                     <div className="columns is-vcentered">
                         <div className="column is-size-5 is-half content">
@@ -29,7 +29,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </div>
-            </div >
+            </section>
             <SkillSet />
         </>
     );
