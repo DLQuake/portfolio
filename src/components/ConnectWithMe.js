@@ -19,7 +19,7 @@ const ConnectWithMe = () => {
                     <a href={process.env.NEXT_PUBLIC_X_LINK} aria-label='Visit my X profile' target="_blank" className="button is-light is-rounded">
                         <FaXTwitter className="icon" />
                     </a>
-                    <a href={`mailto: ${process.env.NEXT_PUBLIC_EMAIL}`} aria-label='Send me an email' target="_blank" className="button is-light is-rounded">
+                    <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} aria-label='Send me an email' target="_blank" className="button is-light is-rounded">
                         <FaEnvelope className="icon" />
                     </a>
                 </div>

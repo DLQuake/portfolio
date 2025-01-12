@@ -31,7 +31,7 @@ const Footer = () => {
                         <a href={process.env.NEXT_PUBLIC_X_LINK} aria-label='Visit my X profile' target="_blank" rel="noopener noreferrer" className="icon">
                             <FaXTwitter />
                         </a>
-                        <a href={`mailto: ${process.env.NEXT_PUBLIC_EMAIL}`} aria-label='Send me an email' target="_blank" rel="noopener noreferrer" className="icon">
+                        <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} aria-label='Send me an email' target="_blank" rel="noopener noreferrer" className="icon">
                             <FaEnvelope />
                         </a>
                     </div>
