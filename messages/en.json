@@ -1,10 +1,16 @@
 {
+    "NotFound": {
+        "title": "404",
+        "subtitle": "Page not found",
+        "content": "Sorry, the page you are looking for doesn't exist.",
+        "button": "Back to Home"
+    },
     "HomePage": {
         "WelcomeSection": {
             "Hi": "Hi There!",
             "me": "I'm"
         },
-        "AboutMeSection": {
+        "IntroduceMeSection": {
             "title": "Let me introduce myself",
             "content": "Hi! My name is Dominik, and I am passionate about creating modern web applications. I am fascinated by the world of frontend development, and my goal is to continuously improve myself as a skilled Frontend Developer. Every day, I dedicate time to learning in order to stay up-to-date with the latest trends and technological solutions. I love exploring innovative approaches to problem-solving. Besides programming, I am also interested in Astronomy and Aviation."
         },
@@ -44,7 +50,7 @@
     },
     "ResumePage": {
         "button": "Download CV",
-        "document": "/documents/Dominik_Lewczyński_CV_EN.pdf"
+        "document": "/documents/Resume/EN/Dominik_Lewczyński_CV.pdf"
     },
     "ContactPage": {
         "title": "Contact",

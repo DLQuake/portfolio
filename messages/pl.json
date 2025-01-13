@@ -1,10 +1,16 @@
 {
+    "NotFound": {
+        "title": "404",
+        "subtitle": "Strona nie znaleziona",
+        "content": "Przepraszamy, szukana strona nie istnieje.",
+        "button": "Powrót do strony głównej"
+    },
     "HomePage": {
         "WelcomeSection": {
             "Hi": "Cześć!",
             "me": "Nazywam się"
         },
-        "AboutMeSection":{
+        "IntroduceMeSection":{
             "title": "Pozwól, że się przedstawię",
             "content": "Cześć! Nazywam się Dominik i jestem pasjonatem tworzenia nowoczesnych aplikacji internetowych. Fascynuje mnie świat frontend developmentu, a moim celem jest ciągłe doskonalenie się jako wykwalifikowany Frontend Developer. Każdego dnia poświęcam czas na naukę, aby być na bieżąco z najnowszymi trendami i rozwiązaniami technologicznymi. Uwielbiam odkrywać innowacyjne podejścia do rozwiązywania problemów. Poza programowaniem interesuję się również astronomią i lotnictwem."
         },
@@ -27,7 +33,7 @@
             }
         },
         "skills": {
-            "title": "Umiejetnosci",
+            "title": "Umiejętności",
             "Frontend": "Frontend",
             "Backend": "Backend",
             "Tools": "Narzędzia",
@@ -44,7 +50,7 @@
     },
     "ResumePage": {
         "button": "Pobierz CV",
-        "document": "/documents/Dominik_Lewczyński_CV_PL.pdf"
+        "document": "/documents/Resume/PL/Dominik_Lewczyński_CV.pdf"
     },
     "ContactPage": {
         "title": "Kontakt",
