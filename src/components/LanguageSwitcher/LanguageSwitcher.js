@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import "../styles/LanguageSwitcher.css";
+import "./LanguageSwitcher.css";
 
 const LanguageSwitcher = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("en");

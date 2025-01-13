@@ -1,11 +1,12 @@
 import { useTranslations } from 'next-intl';
 import { FaEnvelope } from 'react-icons/fa';
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import './ConnectWithMe.css';
 
 const ConnectWithMe = () => {
     const t = useTranslations('HomePage');
     return (
-        <section className="section">
+        <section className="connectWithMe section">
             <div className="container">
                 <h2 className="title has-text-centered is-uppercase is-size-2">{t("ConnectWithMeSection.title")}</h2>
                 <p className="has-text-centered is-size-5">{t("ConnectWithMeSection.subtitle")}</p>

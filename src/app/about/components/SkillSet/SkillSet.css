@@ -1,0 +1,7 @@
+.skill-card {
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+	transform: scale(1.1);
+}

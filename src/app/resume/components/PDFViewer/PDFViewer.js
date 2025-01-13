@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
+import "./PDFViewer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 

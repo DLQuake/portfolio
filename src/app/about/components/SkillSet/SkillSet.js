@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import { SkillCategories } from "./SkillCategories";
-
+import { SkillCategories } from "../SkillCategories/SkillCategories";
+import "./SkillSet.css";
 
 const SkillSet = () => {
     const t = useTranslations('AboutPage');

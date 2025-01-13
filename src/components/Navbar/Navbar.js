@@ -1,10 +1,11 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { FaHome, FaUser, FaFileDownload, FaEnvelope, FaTerminal } from 'react-icons/fa';
-import ThemeSwitcher from './ThemeSwitcher';
+import { FaHome, FaUser, FaFileDownload, FaEnvelope, FaFolder } from 'react-icons/fa';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import { useTranslations } from 'next-intl';
-import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import Link from 'next/link';
+import './Navbar.css';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -65,7 +66,7 @@ const Navbar = () => {
                             <FaUser className="icon" /> {t('about')}
                         </Link>
                         <Link href="/projects" className="navbar-item" onClick={() => setIsActive(false)}>
-                            <FaTerminal className="icon" /> {t('projects')}
+                            <FaFolder className="icon" /> {t('projects')}
                         </Link>
                         <Link href="/resume" className="navbar-item" onClick={() => setIsActive(false)}>
                             <FaFileDownload className="icon" /> {t('resume')}

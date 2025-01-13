@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import '../styles/ThemeSwitcher.css';
+import './ThemeSwitcher.css';
 
 function ThemeSwitcher() {
     const [theme, setTheme] = useState("");

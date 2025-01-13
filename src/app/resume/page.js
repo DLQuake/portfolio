@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
-import DownloadCVButton from "@/components/DownloadCVButton";
+import DownloadCVButton from "./components/DownloadCVButton/DownloadCVButton";
 import { useTranslations } from "next-intl";
 
-const PDFViewer = dynamic(() => import("@/components/PDFViewer"), { ssr: false });
+const PDFViewer = dynamic(() => import("./components/PDFViewer/PDFViewer"), { ssr: false });
 
 export default function Resume() {
     const t = useTranslations("ResumePage");

@@ -1,0 +1,24 @@
+[data-theme="light"]
+.footer .container .columns .column .icon {
+	color: #2e333d !important;
+}
+
+[data-theme="dark"]
+.footer .container .columns .column .icon {
+	color: #abb1bf !important;
+}
+
+.footer .container .columns .column .icon {
+	margin: 0 10px;
+	font-size: 24px;
+}
+
+.footer .container .columns .column .icon:hover {
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+	.has-text-centered-mobile {
+		text-align: center;
+	}
+}

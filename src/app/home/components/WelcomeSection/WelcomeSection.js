@@ -1,6 +1,7 @@
 "use client";
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import "./WelcomeSection.css"
 
 const WelcomeSection = () => {
     const t = useTranslations('HomePage');

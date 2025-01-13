@@ -1,0 +1,13 @@
+[data-theme="light"]
+.contact_links {
+	color: hsl(0, 0%, 29%) !important
+}
+
+[data-theme="dark"]
+.contact_links {
+	color: hsl(0, 0%, 71%) !important;
+}
+
+.contact_links:hover {
+	opacity: 0.8;
+}
