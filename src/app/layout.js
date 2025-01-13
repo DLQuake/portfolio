@@ -2,8 +2,8 @@ import "../styles/globals.css";
 import "bulma/css/bulma.css";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
@@ -15,9 +15,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const locale = await getLocale();
-
   const messages = await getMessages();
-
 
   return (
     <html lang={locale}>
