@@ -11,8 +11,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container">
                 <div className="columns is-vcentered">
-                    <div className="column has-text-left has-text-centered-mobile">
-                    </div>
+                    <div className="column has-text-left has-text-centered-mobile"></div>
 
                     <div className="column has-text-centered">
                         <p>
@@ -23,17 +22,17 @@ const Footer = () => {
                     </div>
 
                     <div className="column has-text-right has-text-centered-mobile">
-                        <a href={process.env.NEXT_PUBLIC_GITHUB_LINK} aria-label='Visit my GitHub profile' target="_blank" rel="noopener noreferrer" className="icon">
-                            <FaGithub />
+                        <a href={process.env.NEXT_PUBLIC_GITHUB_LINK} aria-label='Visit my GitHub profile' target="_blank" className="button">
+                            <FaGithub className="icon" />
                         </a>
-                        <a href={process.env.NEXT_PUBLIC_LINKEDIN_LINK} aria-label='Visit my LinkedIn profile' target="_blank" rel="noopener noreferrer" className="icon">
-                            <FaLinkedinIn />
+                        <a href={process.env.NEXT_PUBLIC_LINKEDIN_LINK} aria-label='Visit my LinkedIn profile' target="_blank" className="button">
+                            <FaLinkedinIn className="icon" />
                         </a>
-                        <a href={process.env.NEXT_PUBLIC_X_LINK} aria-label='Visit my X profile' target="_blank" rel="noopener noreferrer" className="icon">
-                            <FaXTwitter />
+                        <a href={process.env.NEXT_PUBLIC_X_LINK} aria-label='Visit my X profile' target="_blank" className="button">
+                            <FaXTwitter className="icon" />
                         </a>
-                        <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} aria-label='Send me an email' target="_blank" rel="noopener noreferrer" className="icon">
-                            <FaEnvelope />
+                        <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} aria-label='Send me an email' target="_blank" className="button">
+                            <FaEnvelope className="icon" />
                         </a>
                     </div>
                 </div>

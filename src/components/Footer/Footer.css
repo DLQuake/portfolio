@@ -1,20 +1,16 @@
-[data-theme="light"]
-.footer .container .columns .column .icon {
-	color: #2e333d !important;
+.footer .container .columns .column .button {
+	padding: 0;
+	border: none;
+	background: none;
+	box-shadow: none;
 }
 
-[data-theme="dark"]
-.footer .container .columns .column .icon {
-	color: #abb1bf !important;
-}
-
-.footer .container .columns .column .icon {
+.footer .container .columns .column .button .icon {
 	margin: 0 10px;
-	font-size: 24px;
 }
 
-.footer .container .columns .column .icon:hover {
-	opacity: 0.8;
+.footer .container .columns .column .button .icon:hover {
+	opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {

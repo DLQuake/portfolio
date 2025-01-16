@@ -1,3 +1,7 @@
 .connectWithMe .container .buttons .button .icon {
 	font-size: 24px;
 }
+
+.connectWithMe .container .buttons .button:hover {
+	opacity: 0.8;
+}
