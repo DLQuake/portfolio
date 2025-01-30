@@ -6,10 +6,6 @@
 	transition: background-color 0.3s ease-in-out;
 }
 
-.navbar.scrolled {
-	opacity: 0.9;
-}
-
 .navbartools {
 	display: flex;
 	justify-content: center;
