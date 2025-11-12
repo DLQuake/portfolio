@@ -15,7 +15,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, clone the repository and install the necessary dependencies:
 
 ```bash
-git https://github.com/DLQuake/portfolio.git
+git clone https://github.com/DLQuake/portfolio.git
 cd portfolio
 npm install
 ```
