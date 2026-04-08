@@ -36,8 +36,10 @@
             "title": "Umiejętności",
             "Frontend": "Frontend",
             "Backend": "Backend",
-            "Tools": "Narzędzia",
             "Databases": "Bazy danych",
+            "Tools": "Narzędzia i platformy",
+            "DataScience": "Data Science",
+            "CMSEcommerce": "CMS & E-commerce",
             "Methodologies": "Metodologie"
         }
     },

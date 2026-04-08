@@ -36,8 +36,10 @@
             "title": "Skills",
             "Frontend": "Frontend",
             "Backend": "Backend",
-            "Tools": "Tools",
             "Databases": "Databases",
+            "Tools": "Narzędzia i platformy",
+            "DataScience": "Data Science",
+            "CMSEcommerce": "CMS & E-commerce",
             "Methodologies": "Methodologies"
         }
     },
