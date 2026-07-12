@@ -6,12 +6,18 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
+import { getLocale, getMessages, getTranslations } from 'next-intl/server';
 
-export const metadata = {
-  title: "Dominik Lewczyński",
-  description: "Welcome to my personal portfolio website, built using Next.js, generated with the Create Next App tool. It showcases my skills, projects, and achievements in web development.",
-};
+
+export async function generateMetadata() {
+  const t = await getTranslations('layout');
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
+
 
 export default async function RootLayout({ children }) {
   const locale = await getLocale();
@@ -22,9 +28,9 @@ export default async function RootLayout({ children }) {
       <body>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <div className="mainpadding">
+          <main className="mainpadding">
             {children}
-          </div>
+          </main>
           <Footer />
         </NextIntlClientProvider>
       </body>

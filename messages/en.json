@@ -1,4 +1,8 @@
 {
+    "layout": {
+        "title": "Dominik Lewczyński",
+        "description": "Welcome to my personal portfolio website, built using Next.js, generated with the Create Next App tool. It showcases my skills, projects, and achievements in web development."
+    },
     "NotFound": {
         "title": "404",
         "subtitle": "Page not found",
