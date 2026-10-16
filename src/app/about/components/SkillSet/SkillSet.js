@@ -5,7 +5,7 @@ import "./SkillSet.css";
 const SkillSet = () => {
     const t = useTranslations('AboutPage');
     return (
-        <div className="section notification mb-0">
+        <div className="section mb-0">
             <div className="container">
                 <h2 className="title is-size-2 has-text-centered">{t("skills.title")}</h2>
 
@@ -14,8 +14,8 @@ const SkillSet = () => {
                         <h3 className="subtitle is-size-3 has-text-centered">{t(`skills.${category.category}`)}</h3>
                         <div className="columns is-centered is-multiline">
                             {category.skills.map((skill, skillIndex) => (
-                                <div key={skillIndex} className="column is-3 skill-card">
-                                    <div className="box is-1 has-text-centered">
+                                <div key={skillIndex} className="column is-3 skill-card ">
+                                    <div className="box is-1 has-text-centered notification">
                                         <div className="icon is-size-1 is-large">{skill.icon}</div>
                                         <p className="title">{skill.name}</p>
                                     </div>

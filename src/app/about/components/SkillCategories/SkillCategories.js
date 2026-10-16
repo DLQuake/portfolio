@@ -1,6 +1,6 @@
 import { FaReact, FaJsSquare, FaGithub, FaChartLine, FaBitbucket, FaNode, FaGitAlt, FaPython, FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaWordpress } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiChartdotjs, SiPhp, SiEslint, SiGithubpages, SiPandas, SiNumpy, SiPrestashop, SiMarkdown, SiNodemon, SiP5Dotjs, SiSequelize, SiBem, SiBulma, SiExpress, SiNotion, SiFigma, SiFlask, SiJquery, SiMysql, SiNpm, SiPhpmyadmin, SiPostgresql, SiPostman, SiVercel, SiVite } from "react-icons/si";
+import { SiChartdotjs, SiPhp, SiEslint, SiGithubpages, SiPandas, SiNumpy, SiPrestashop, SiMarkdown, SiNodemon, SiP5Dotjs, SiSequelize, SiBem, SiBulma, SiExpress, SiNotion, SiFigma, SiFlask, SiJquery, SiMysql, SiNpm, SiPhpmyadmin, SiPostgresql, SiPostman, SiVercel, SiVite, SiElementor } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 export const SkillCategories = [
@@ -56,6 +56,7 @@ export const SkillCategories = [
             { name: "Notion", icon: <SiNotion /> },
             { name: "Markdown", icon: <SiMarkdown /> },
             { name: "PhpMyAdmin", icon: <SiPhpmyadmin /> },
+            { name: "Elementor", icon: <SiElementor /> },
         ],
     },
     {

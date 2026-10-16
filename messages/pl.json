@@ -45,6 +45,86 @@
             "DataScience": "Data Science",
             "CMSEcommerce": "CMS & E-commerce",
             "Methodologies": "Metodologie"
+        },
+        "experience": {
+            "title": "Doświadczenie",
+            "subtitle": "Miejsca pracy, w których zdobywałem doświadczenie zawodowe",
+            "items": [
+                {
+                    "date": "Maj 2025 – Obecnie",
+                    "role": "Programista PHP",
+                    "company": "BigCom Sp. z o.o.",
+                    "logo": "/images/logos/bigcom.png",
+                    "description": "Tworzenie i rozwijanie stron internetowych opartych na systemie WordPress. Projektowanie i wdrażanie własnych wtyczek do platformy PrestaShop. Naprawa błędów i optymalizacja istniejących rozwiązań. Aktualizacja i modernizacja stron internetowych zgodnie z najnowszymi standardami. Realizacja projektów stron internetowych na podstawie przygotowanych projektów graficznych w Figmie. Współpraca z zespołem graficznym oraz UX/UI w celu dopasowania funkcjonalności do wizji projektu. Dokumentowanie wykonanych prac i przygotowywanie instrukcji użytkownika.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "PHP",
+                        "WordPress",
+                        "PrestaShop",
+                        "Elementor",
+                        "Twig",
+                        "BEM",
+                        "Git",
+                        "MySQL"
+                    ]
+                },
+                {
+                    "date": "Październik 2022 – Luty 2025",
+                    "role": "Frontend Developer",
+                    "company": "Soft-Fusion",
+                    "logo": "/images/logos/softfusion.svg",
+                    "description": "Tworzenie projektów w WordPressie na podstawie otrzymanego projektu w Figmie. Tworzenie projektów w WordPressie z użyciem gotowego szablonu.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "WordPress",
+                        "Twig",
+                        "BEM",
+                        "Git"
+                    ]
+                },
+                {
+                    "date": "Wrzesień 2022",
+                    "role": "Praktykant",
+                    "company": "Soft-Fusion",
+                    "logo": "/images/logos/softfusion.svg",
+                    "description": " Wykonywanie stron internetowych w HTML, SASS, JavaScript na podstawie otrzymanego projektu w Figmie. Tworzenie projektów w WordPressie na podstawie otrzymanego projektu w FigmieRozwój aplikacji internetowych.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "WordPress",
+                        "Twig",
+                        "BEM",
+                        "Git"
+                    ]
+                },
+                {
+                    "date": "Lipiec 2022 – Sierpień 2022",
+                    "role": "Stażysta",
+                    "company": "Soft-Fusion",
+                    "logo": "/images/logos/softfusion.svg",
+                    "description": "Wykonywanie stron internetowych w HTML, CSS oraz JavaScript na podstawie otrzymanego projektu w Figmie.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "BEM",
+                        "Git"
+                    ]
+                }
+            ]
         }
     },
     "ProjectsPage": {

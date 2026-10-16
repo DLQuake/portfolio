@@ -45,6 +45,86 @@
             "DataScience": "Data Science",
             "CMSEcommerce": "CMS & E-commerce",
             "Methodologies": "Methodologies"
+        },
+        "experience": {
+            "title": "Experience",
+            "subtitle": "Places I've worked at and internships I've completed",
+            "items": [
+                {
+                    "date": "May 2025 – Current",
+                    "role": "PHP Developer",
+                    "company": "BigCom Sp. z o.o.",
+                    "logo": "/images/logos/bigcom.png",
+                    "description": "Creating and developing websites based on the WordPress platform. Designing and implementing custom plugins for the PrestaShop platform. Debugging and optimizing existing solutions. Updating and modernizing websites in accordance with the latest standards. Implementing website projects based on graphic designs created in Figma. Collaborating with the graphic design and UX/UI teams to align functionality with the project’s vision. Documenting completed work and preparing user manuals.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "PHP",
+                        "WordPress",
+                        "PrestaShop",
+                        "Elementor",
+                        "Twig",
+                        "BEM",
+                        "Git",
+                        "MySQL"
+                    ]
+                },
+                {
+                    "date": "October 2022 – February 2025",
+                    "role": "Frontend Developer",
+                    "company": "Soft-Fusion",
+                    "logo": "/images/logos/softfusion.svg",
+                    "description": "Creating WordPress sites based on a design received in Figma. Creating WordPress sites using a ready-made template.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "WordPress",
+                        "Twig",
+                        "BEM",
+                        "Git"
+                    ]
+                },
+                {
+                    "date": "September 2022",
+                    "role": "Praktykant",
+                    "company": "Soft-Fusion",
+                    "logo": "/images/logos/softfusion.svg",
+                    "description": "Developing websites using HTML, SASS, and JavaScript based on a Figma design. Creating WordPress sites based on a Figma design. Web application development.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "WordPress",
+                        "Twig",
+                        "BEM",
+                        "Git"
+                    ]
+                },
+                {
+                    "date": "July 2022 – August 2022",
+                    "role": "Stażysta",
+                    "company": "Soft-Fusion",
+                    "logo": "/images/logos/softfusion.svg",
+                    "description": "Developing websites using HTML, CSS, and JavaScript based on a design provided in Figma.",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "SASS",
+                        "JavaScript",
+                        "jQuery",
+                        "BEM",
+                        "Git"
+                    ]
+                }
+            ]
         }
     },
     "ProjectsPage": {
