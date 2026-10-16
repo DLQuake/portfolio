@@ -92,7 +92,7 @@
                 },
                 {
                     "date": "September 2022",
-                    "role": "Praktykant",
+                    "role": "Apprentice",
                     "company": "Soft-Fusion",
                     "logo": "/images/logos/softfusion.svg",
                     "description": "Developing websites using HTML, SASS, and JavaScript based on a Figma design. Creating WordPress sites based on a Figma design. Web application development.",
@@ -110,7 +110,7 @@
                 },
                 {
                     "date": "July 2022 – August 2022",
-                    "role": "Stażysta",
+                    "role": "Intern",
                     "company": "Soft-Fusion",
                     "logo": "/images/logos/softfusion.svg",
                     "description": "Developing websites using HTML, CSS, and JavaScript based on a design provided in Figma.",
