@@ -1,6 +1,7 @@
 import SkillSet from './components/SkillSet/SkillSet';
 import AboutMe from './components/AboutMe/AboutMe';
 import Experience from './components/Experience/Experience';
+import Education from './components/Education/Education'
 
 const AboutPage = () => {
     return (
@@ -8,6 +9,7 @@ const AboutPage = () => {
             <AboutMe />
             <Experience />
             <SkillSet />
+            <Education />
         </div>
     );
 };

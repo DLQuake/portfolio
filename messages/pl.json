@@ -14,7 +14,7 @@
             "Hi": "Cześć!",
             "me": "Nazywam się"
         },
-        "IntroduceMeSection":{
+        "IntroduceMeSection": {
             "title": "Pozwól, że się przedstawię",
             "content": "Cześć! Nazywam się Dominik i jestem pasjonatem tworzenia nowoczesnych aplikacji internetowych. Fascynuje mnie świat frontend developmentu, a moim celem jest ciągłe doskonalenie się jako wykwalifikowany Frontend Developer. Każdego dnia poświęcam czas na naukę, aby być na bieżąco z najnowszymi trendami i rozwiązaniami technologicznymi. Uwielbiam odkrywać innowacyjne podejścia do rozwiązywania problemów. Poza programowaniem interesuję się również astronomią i lotnictwem."
         },
@@ -54,6 +54,7 @@
                     "date": "Maj 2025 – Obecnie",
                     "role": "Programista PHP",
                     "company": "BigCom Sp. z o.o.",
+                    "url": "https://bigcom.pl/",
                     "logo": "/images/logos/bigcom.png",
                     "description": "Tworzenie i rozwijanie stron internetowych opartych na systemie WordPress. Projektowanie i wdrażanie własnych wtyczek do platformy PrestaShop. Naprawa błędów i optymalizacja istniejących rozwiązań. Aktualizacja i modernizacja stron internetowych zgodnie z najnowszymi standardami. Realizacja projektów stron internetowych na podstawie przygotowanych projektów graficznych w Figmie. Współpraca z zespołem graficznym oraz UX/UI w celu dopasowania funkcjonalności do wizji projektu. Dokumentowanie wykonanych prac i przygotowywanie instrukcji użytkownika.",
                     "technologies": [
@@ -76,6 +77,7 @@
                     "date": "Październik 2022 – Luty 2025",
                     "role": "Frontend Developer",
                     "company": "Soft-Fusion",
+                    "url": "https://softfusion.pl/",
                     "logo": "/images/logos/softfusion.svg",
                     "description": "Tworzenie projektów w WordPressie na podstawie otrzymanego projektu w Figmie. Tworzenie projektów w WordPressie z użyciem gotowego szablonu.",
                     "technologies": [
@@ -94,6 +96,7 @@
                     "date": "Wrzesień 2022",
                     "role": "Praktykant",
                     "company": "Soft-Fusion",
+                    "url": "https://softfusion.pl/",
                     "logo": "/images/logos/softfusion.svg",
                     "description": " Wykonywanie stron internetowych w HTML, SASS, JavaScript na podstawie otrzymanego projektu w Figmie. Tworzenie projektów w WordPressie na podstawie otrzymanego projektu w FigmieRozwój aplikacji internetowych.",
                     "technologies": [
@@ -112,6 +115,7 @@
                     "date": "Lipiec 2022 – Sierpień 2022",
                     "role": "Stażysta",
                     "company": "Soft-Fusion",
+                    "url": "https://softfusion.pl/",
                     "logo": "/images/logos/softfusion.svg",
                     "description": "Wykonywanie stron internetowych w HTML, CSS oraz JavaScript na podstawie otrzymanego projektu w Figmie.",
                     "technologies": [
@@ -123,6 +127,37 @@
                         "BEM",
                         "Git"
                     ]
+                }
+            ]
+        },
+        "education": {
+            "title": "Edukacja",
+            "subtitle": "Szkoły i uczelnie, do których uczęszczałem",
+            "empty": "Brak informacji o wykształceniu.",
+            "items": [
+                {
+                    "date": "Luty 2023 – Wrzesień 2024",
+                    "role": "Magister Inżynier",
+                    "company": "Uniwersytet Warmińsko-Mazurski w Olsztynie",
+                    "url": "https://uwm.edu.pl/",
+                    "description": "Ukończyłem studia magisterskie na kierunku Informatyka na Wydziale Matematyki i Informatyki, ze specjalnością Data Science w Praktyce.",
+                    "logo": "/images/education/uwm.png"
+                },
+                {
+                    "date": "Październik 2019 – Luty 2023",
+                    "role": "Inżynier",
+                    "company": "Uniwersytet Warmińsko-Mazurski w Olsztynie",
+                    "url": "https://uwm.edu.pl/",
+                    "description": "Ukończyłem studia inżynierskie na kierunku Informatyka, ze specjalnością Informatyka Ogólna.",
+                    "logo": "/images/education/uwm.png"
+                },
+                {
+                    "date": "Wrzesień 2016 – Czerwiec 2019",
+                    "role": "Świadectwo ukończenia szkoły średniej",
+                    "company": "Zespół Szkół nr 3 im. Jana III Sobieskiego w Szczytnie",
+                    "url": "http://loszczytno.edu.pl/",
+                    "description": "Ukończyłem liceum ogólnokształcące w klasie o profilu matematyczno-fizycznym.",
+                    "logo": "/images/education/zs3szczytno.png"
                 }
             ]
         }

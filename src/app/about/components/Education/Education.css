@@ -1,0 +1,205 @@
+.education-heading {
+    color: var(--bulma-text, #e5e7eb);
+}
+
+.education-subtitle {
+    margin-bottom: 2.5rem;
+    color: var(--bulma-text-weak, #a6adc8);
+}
+
+.education-timeline {
+    --timeline-color: #7c83fd;
+    --card-background: var(--bulma-scheme-main-bis, #1e1e2e);
+
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+.education-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: var(--timeline-color);
+    opacity: 0.6;
+}
+
+.education-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-item-left .education-card {
+    grid-column: 1;
+}
+
+.education-item-right .education-card {
+    grid-column: 3;
+}
+
+.education-marker {
+    grid-column: 2;
+    grid-row: 1;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.4rem;
+}
+
+.education-marker span {
+    width: 14px;
+    height: 14px;
+    border: 3px solid var(--timeline-color);
+    border-radius: 50%;
+    background: var(--card-background);
+}
+
+.education-card.box {
+    min-width: 0;
+    margin: 0;
+    padding: 1.25rem;
+    border: 1px solid var(--bulma-border, #45475a);
+    border-radius: 12px;
+    background: var(--card-background);
+    color: var(--bulma-text, #e5e7eb);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+    text-decoration: none !important;
+}
+
+.education-card.box:hover {
+    transform: translateY(-4px);
+    border-color: var(--timeline-color);
+    box-shadow: 0 12px 30px rgb(0 0 0 / 20%);
+}
+
+.education-date {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    background: rgb(124 131 253 / 14%);
+    color: #a5b4fc;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.education-info {
+    min-width: 0;
+}
+
+.education-role {
+    margin: 0 0 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.education-company {
+    margin: 0;
+    color: #a5b4fc;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.education-logo {
+    display: flex;
+    flex: 0 0 60px;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.education-logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.education-description {
+    margin: 0.75rem 0 0;
+    color: var(--bulma-text-weak, #cdd0e0);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 768px) {
+    .education-subtitle {
+        margin-bottom: 1.5rem;
+    }
+
+    .education-timeline::before {
+        left: 7px;
+        transform: none;
+    }
+
+    .education-item {
+        grid-template-columns: 16px minmax(0, 1fr);
+        column-gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .education-item-left .education-card,
+    .education-item-right .education-card {
+        grid-column: 2;
+    }
+
+    .education-marker {
+        grid-column: 1;
+        padding-top: 1.25rem;
+    }
+
+    .education-marker span {
+        width: 12px;
+        height: 12px;
+    }
+
+    .education-card.box {
+        padding: 1rem;
+    }
+
+    .education-role {
+        font-size: 1rem;
+    }
+
+    .education-logo {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .education-card.box {
+        transition: none;
+    }
+}

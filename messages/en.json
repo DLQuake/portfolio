@@ -54,6 +54,7 @@
                     "date": "May 2025 – Current",
                     "role": "PHP Developer",
                     "company": "BigCom Sp. z o.o.",
+                    "url": "https://bigcom.pl/",
                     "logo": "/images/logos/bigcom.png",
                     "description": "Creating and developing websites based on the WordPress platform. Designing and implementing custom plugins for the PrestaShop platform. Debugging and optimizing existing solutions. Updating and modernizing websites in accordance with the latest standards. Implementing website projects based on graphic designs created in Figma. Collaborating with the graphic design and UX/UI teams to align functionality with the project’s vision. Documenting completed work and preparing user manuals.",
                     "technologies": [
@@ -76,6 +77,7 @@
                     "date": "October 2022 – February 2025",
                     "role": "Frontend Developer",
                     "company": "Soft-Fusion",
+                    "url": "https://softfusion.pl/",
                     "logo": "/images/logos/softfusion.svg",
                     "description": "Creating WordPress sites based on a design received in Figma. Creating WordPress sites using a ready-made template.",
                     "technologies": [
@@ -94,6 +96,7 @@
                     "date": "September 2022",
                     "role": "Apprentice",
                     "company": "Soft-Fusion",
+                    "url": "https://softfusion.pl/",
                     "logo": "/images/logos/softfusion.svg",
                     "description": "Developing websites using HTML, SASS, and JavaScript based on a Figma design. Creating WordPress sites based on a Figma design. Web application development.",
                     "technologies": [
@@ -112,6 +115,7 @@
                     "date": "July 2022 – August 2022",
                     "role": "Intern",
                     "company": "Soft-Fusion",
+                    "url": "https://softfusion.pl/",
                     "logo": "/images/logos/softfusion.svg",
                     "description": "Developing websites using HTML, CSS, and JavaScript based on a design provided in Figma.",
                     "technologies": [
@@ -123,6 +127,37 @@
                         "BEM",
                         "Git"
                     ]
+                }
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "subtitle": "My academic background",
+            "empty": "No education information available.",
+            "items": [
+                {
+                    "date": "February 2023 – September 2024",
+                    "role": "Master of Engineering",
+                    "company": "University of Warmia and Mazury in Olsztyn",
+                    "url": "https://uwm.edu.pl/",
+                    "description": "Graduated with a Master's degree in Computer Science from the Faculty of Mathematics and Computer Science, specializing in Data Science in Practice.",
+                    "logo": "/images/education/uwm.png"
+                },
+                {
+                    "date": "October 2019 – February 2023",
+                    "role": "Bachelor of Engineering",
+                    "company": "University of Warmia and Mazury in Olsztyn",
+                    "url": "https://uwm.edu.pl/",
+                    "description": "Graduated with an engineering degree in Computer Science, specializing in General Computer Science.",
+                    "logo": "/images/education/uwm.png"
+                },
+                {
+                    "date": "September 2016 – June 2019",
+                    "role": "High School Diploma",
+                    "company": "Jan III Sobieski School Complex No. 3 in Szczytno",
+                    "url": "http://loszczytno.edu.pl/",
+                    "description": "Graduated from a general secondary school with a mathematics and physics specialization.",
+                    "logo": "/images/education/zs3szczytno.png"
                 }
             ]
         }

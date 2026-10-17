@@ -100,6 +100,8 @@
         transform 180ms ease,
         border-color 180ms ease,
         box-shadow 180ms ease;
+
+    text-decoration: none !important;
 }
 
 .experience-card.box:hover {
