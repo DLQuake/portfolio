@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 import { FaReact, FaJsSquare, FaGithub, FaBitbucket, FaNode, FaGitAlt, FaPython, FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaWordpress} from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
+import { DiZend } from "react-icons/di";
 import { SiChartdotjs, SiPhp, SiEslint, SiGithubpages, SiPandas, SiNumpy, SiPrestashop, SiMarkdown, SiNodemon, SiP5Dotjs, SiSequelize, SiBem, SiBulma, SiExpress, SiNotion, SiFigma, SiFlask, SiJquery, SiMysql, SiNpm, SiPhpmyadmin, SiPostgresql, SiPostman, SiVercel, SiVite, SiElementor } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -50,6 +51,7 @@ const technologyIcons = {
 
     PHP: SiPhp,
     Python: FaPython,
+    "Zend Framework": DiZend,
 
     Express: SiExpress,
     "Express.js": SiExpress,
