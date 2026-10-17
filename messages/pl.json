@@ -11,12 +11,16 @@
     },
     "HomePage": {
         "WelcomeSection": {
-            "Hi": "Cześć!",
-            "me": "Nazywam się"
+            "Hi": "Cześć, jestem",
+            "description": "Tworzę nowoczesne i intuicyjne aplikacje internetowe, dbając o jakość kodu oraz dobre doświadczenia użytkowników.",
+            "projectsButton": "Zobacz moje projekty",
+            "aboutButton": "Poznaj mnie bliżej",
+            "imageAlt": "Ilustracja przedstawiająca programowanie"
         },
         "IntroduceMeSection": {
             "title": "Pozwól, że się przedstawię",
-            "content": "Cześć! Nazywam się Dominik i jestem pasjonatem tworzenia nowoczesnych aplikacji internetowych. Fascynuje mnie świat frontend developmentu, a moim celem jest ciągłe doskonalenie się jako wykwalifikowany Frontend Developer. Każdego dnia poświęcam czas na naukę, aby być na bieżąco z najnowszymi trendami i rozwiązaniami technologicznymi. Uwielbiam odkrywać innowacyjne podejścia do rozwiązywania problemów. Poza programowaniem interesuję się również astronomią i lotnictwem."
+            "content": "Cześć! Nazywam się Dominik i jestem pasjonatem tworzenia nowoczesnych aplikacji internetowych. Fascynuje mnie świat frontend developmentu, a moim celem jest ciągłe doskonalenie się jako wykwalifikowany Frontend Developer. Każdego dnia poświęcam czas na naukę, aby być na bieżąco z najnowszymi trendami i rozwiązaniami technologicznymi. Uwielbiam odkrywać innowacyjne podejścia do rozwiązywania problemów. Poza programowaniem interesuję się również astronomią i lotnictwem.",
+            "learnMore": "Poznaj mnie bliżej"
         },
         "ConnectWithMeSection": {
             "title": "Znajdź mnie na",

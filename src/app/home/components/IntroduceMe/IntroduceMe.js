@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { getLocaleFromCookies, preventWidows } from "@/utils/preventWidows";
 
+import Link from 'next/link';
+
 const IntroduceMe = () => {
     const t = useTranslations('HomePage');
     const [locale, setLocale] = useState("en");
@@ -20,6 +22,8 @@ const IntroduceMe = () => {
                         <h2 className="title is-size-2 has-text-centered is-uppercase">{t("IntroduceMeSection.title")}</h2>
                         <div className='content is-size-5 has-text-centered'>
                             <p dangerouslySetInnerHTML={{ __html: preventWidows(t("IntroduceMeSection.content"), locale) }} />
+
+                            <Link href="/about" className="button is-medium has-text-weight-bold">{t("IntroduceMeSection.learnMore")}</Link>
                         </div>
                     </div>
 
