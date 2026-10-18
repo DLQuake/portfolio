@@ -181,7 +181,7 @@
     },
     "ContactPage": {
         "title": "Kontakt",
-        "description": "Masz pytanie lub chcesz nawiązać współpracę? Napisz do mnie — chętnie porozmawiam.",
+        "description": "Masz pytanie? Napisz do mnie — chętnie porozmawiam.",
         "contactform": {
             "fullname": "Pełne imię i nazwisko",
             "email": "Adres Email",

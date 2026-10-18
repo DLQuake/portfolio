@@ -181,7 +181,7 @@
     },
     "ContactPage": {
         "title": "Contact",
-        "description": "Have a question or want to collaborate? Send me a message — I'd be happy to hear from you.",
+        "description": "Have a question? Send me a message — I'd be happy to hear from you.",
         "contactform": {
             "fullname": "Full name",
             "email": "Email",
