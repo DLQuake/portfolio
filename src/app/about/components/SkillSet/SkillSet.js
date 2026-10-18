@@ -1,3 +1,4 @@
+
 import { useTranslations } from "next-intl";
 import { SkillCategories } from "../SkillCategories/SkillCategories";
 import "./SkillSet.css";
@@ -14,8 +15,8 @@ const SkillSet = () => {
                         <h3 className="subtitle is-size-3 has-text-centered">{t(`skills.${category.category}`)}</h3>
                         <div className="columns is-centered is-multiline">
                             {category.skills.map((skill, skillIndex) => (
-                                <div key={skillIndex} className="column is-3 skill-card ">
-                                    <div className="box is-1 has-text-centered notification">
+                                <div key={skillIndex} className="column is-3 skill-card">
+                                    <div className={`box is-1 has-text-centered notification skill-card-box ${skill.featured ? "is-link" : ""}`}>
                                         <div className="icon is-size-1 is-large">{skill.icon}</div>
                                         <p className="title">{skill.name}</p>
                                     </div>

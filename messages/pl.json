@@ -175,17 +175,22 @@
         "demo": "Zobacz Demo"
     },
     "ResumePage": {
+        "title": "Moje CV",
         "button": "Pobierz CV",
         "document": "/documents/Resume/PL/Dominik_Lewczyński_CV.pdf"
     },
     "ContactPage": {
         "title": "Kontakt",
+        "description": "Masz pytanie lub chcesz nawiązać współpracę? Napisz do mnie — chętnie porozmawiam.",
         "contactform": {
             "fullname": "Pełne imię i nazwisko",
             "email": "Adres Email",
             "subject": "Temat",
             "message": "Treść wiadomości",
-            "button": "Wyślij Wiadomość"
+            "button": "Wyślij Wiadomość",
+            "sending": "Wysyłanie wiadomości...",
+            "success": "Wiadomość została wysłana. Dziękuję za kontakt!",
+            "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie."
         },
         "contactinformation": {
             "title": "Informacje kontaktowe",

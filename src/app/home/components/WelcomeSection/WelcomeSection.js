@@ -12,7 +12,7 @@ const WelcomeSection = () => {
     return (
         <section className="welcome-hero section">
             <div className="container">
-                <div className="columns is-vcentered is-variable is-8">
+                <div className="columns is-vcentered is-variable">
                     <div className="column is-6-desktop welcome-content">
                         <p className="welcome-eyebrow">
                             <span className="wave-emoji" aria-hidden="true">
@@ -29,7 +29,7 @@ const WelcomeSection = () => {
                             {process.env.NEXT_PUBLIC_JOB}
                         </h2>
 
-                        <p className="welcome-description">
+                        <p className="welcome-description has-text-justified">
                             {t("WelcomeSection.description")}
                         </p>
 

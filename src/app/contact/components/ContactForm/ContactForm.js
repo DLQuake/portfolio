@@ -1,32 +1,43 @@
 "use client";
-import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
-import { FaUser, FaEnvelope, FaComment } from 'react-icons/fa';
+
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import {
+    FaUser,
+    FaEnvelope,
+    FaComment,
+} from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import FormField from "../FormField/FormField";
 import SubmitButton from "../SubmitButton/SubmitButton";
 
 const ContactForm = () => {
-    const t = useTranslations('ContactPage');
-    const form = useRef();
+    const t = useTranslations("ContactPage");
+    const form = useRef(null);
 
-    const sendEmail = (e) => {
+    const [status, setStatus] = useState("idle");
+
+    const sendEmail = async (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-            form.current,
-            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-        )
-            .then((result) => {
-                console.log(result.text);
-                alert("Your message has been sent successfully!");
-            }, (error) => {
-                console.log(error.text);
-                alert("There was an error sending your message. Please try again.");
-            });
-        e.target.reset();
+        if (!form.current || status === "sending") return;
+
+        setStatus("sending");
+
+        try {
+            await emailjs.sendForm(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+                form.current,
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            );
+
+            form.current.reset();
+            setStatus("success");
+        } catch (error) {
+            console.error("EmailJS error:", error);
+            setStatus("error");
+        }
     };
 
     return (
@@ -39,6 +50,7 @@ const ContactForm = () => {
                 icon={<FaUser />}
                 required
             />
+
             <FormField
                 label={t("contactform.email")}
                 name="user_email"
@@ -47,6 +59,7 @@ const ContactForm = () => {
                 icon={<FaEnvelope />}
                 required
             />
+
             <FormField
                 label={t("contactform.subject")}
                 name="subject"
@@ -55,15 +68,38 @@ const ContactForm = () => {
                 icon={<FaComment />}
                 required
             />
+
             <FormField
                 label={t("contactform.message")}
                 name="message"
                 type="textarea"
                 placeholder={t("contactform.message")}
-                rows="10"
+                rows={8}
                 required
             />
-            <SubmitButton text={t("contactform.button")} />
+
+            {status !== "idle" && (
+                <div
+                    className={`notification ${
+                        status === "success"
+                            ? "is-success"
+                            : status === "error"
+                              ? "is-danger"
+                              : "is-info"
+                    } is-light`}
+                    role="status"
+                    aria-live="polite"
+                >
+                    {status === "sending" && t("contactform.sending")}
+                    {status === "success" && t("contactform.success")}
+                    {status === "error" && t("contactform.error")}
+                </div>
+            )}
+
+            <SubmitButton
+                text={t("contactform.button")}
+                loading={status === "sending"}
+            />
         </form>
     );
 };

@@ -175,17 +175,22 @@
         "demo": "View Demo"
     },
     "ResumePage": {
+        "title": "My Resume",
         "button": "Download CV",
         "document": "/documents/Resume/EN/Dominik_Lewczyński_CV.pdf"
     },
     "ContactPage": {
         "title": "Contact",
+        "description": "Have a question or want to collaborate? Send me a message — I'd be happy to hear from you.",
         "contactform": {
             "fullname": "Full name",
             "email": "Email",
             "subject": "Subject",
             "message": "Message",
-            "button": "Send a Message"
+            "button": "Send a Message",
+            "sending": "Sending your message...",
+            "success": "Your message has been sent successfully. Thank you for reaching out!",
+            "error": "Something went wrong while sending your message. Please try again."
         },
         "contactinformation": {
             "title": "Contact Information",

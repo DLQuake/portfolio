@@ -13,10 +13,10 @@ export const SkillCategories = [
             { name: "SASS", icon: <FaSass /> },
             { name: "Bootstrap", icon: <FaBootstrap /> },
             { name: "Bulma", icon: <SiBulma /> },
-            { name: "JavaScript", icon: <FaJsSquare /> },
+            { name: "JavaScript", icon: <FaJsSquare />, featured: true },
             { name: "jQuery", icon: <SiJquery /> },
-            { name: "React", icon: <FaReact /> },
-            { name: "Next.js", icon: <RiNextjsFill /> },
+            { name: "React", icon: <FaReact />, featured: true },
+            { name: "Next.js", icon: <RiNextjsFill />, featured: true },
             { name: "Chart.js", icon: <SiChartdotjs /> },
             { name: "p5.js", icon: <SiP5Dotjs /> },
         ],
@@ -25,25 +25,25 @@ export const SkillCategories = [
         category: "Backend",
         skills: [
             { name: "Node.js", icon: <FaNode /> },
-            { name: "Express.js", icon: <SiExpress /> },
-            { name: "Python", icon: <FaPython /> },
+            { name: "Express.js", icon: <SiExpress />, featured: true },
+            { name: "Python", icon: <FaPython />, featured: true },
             { name: "Flask", icon: <SiFlask /> },
             { name: "Sequelize", icon: <SiSequelize /> },
-            { name: "PHP", icon: <SiPhp /> },
+            { name: "PHP", icon: <SiPhp />, featured: true },
             { name: "Zend Framework", icon: <DiZend /> },
         ],
     },
     {
         category: "Databases",
         skills: [
-            { name: "MySQL", icon: <SiMysql /> },
+            { name: "MySQL", icon: <SiMysql />, featured: true },
             { name: "PostgreSQL", icon: <SiPostgresql /> },
         ],
     },
     {
         category: "Tools",
         skills: [
-            { name: "Git", icon: <FaGitAlt /> },
+            { name: "Git", icon: <FaGitAlt />, featured: true },
             { name: "GitHub", icon: <FaGithub /> },
             { name: "Bitbucket", icon: <FaBitbucket /> },
             { name: "Vite", icon: <SiVite /> },
@@ -57,8 +57,8 @@ export const SkillCategories = [
             { name: "GitHub Pages", icon: <SiGithubpages /> },
             { name: "Notion", icon: <SiNotion /> },
             { name: "Markdown", icon: <SiMarkdown /> },
-            { name: "PhpMyAdmin", icon: <SiPhpmyadmin /> },
-            { name: "Elementor", icon: <SiElementor /> },
+            { name: "PhpMyAdmin", icon: <SiPhpmyadmin />, featured: true },
+            { name: "Elementor", icon: <SiElementor />, featured: true },
         ],
     },
     {
@@ -72,8 +72,8 @@ export const SkillCategories = [
     {
         category: "CMSEcommerce",
         skills: [
-            { name: "WordPress", icon: <FaWordpress /> },
-            { name: "PrestaShop", icon: <SiPrestashop /> },
+            { name: "WordPress", icon: <FaWordpress />, featured: true },
+            { name: "PrestaShop", icon: <SiPrestashop />, featured: true },
         ],
     },
     {

@@ -20,9 +20,11 @@ const IntroduceMe = () => {
                 <div className="columns is-vcentered">
                     <div className="column is-half">
                         <h2 className="title is-size-2 has-text-centered is-uppercase">{t("IntroduceMeSection.title")}</h2>
-                        <div className='content is-size-5 has-text-centered'>
+                        <div className='content is-size-5 has-text-justified'>
                             <p dangerouslySetInnerHTML={{ __html: preventWidows(t("IntroduceMeSection.content"), locale) }} />
 
+                        </div>
+                        <div className='has-text-centered'>
                             <Link href="/about" className="button is-medium has-text-weight-bold">{t("IntroduceMeSection.learnMore")}</Link>
                         </div>
                     </div>

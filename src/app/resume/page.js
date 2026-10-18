@@ -13,7 +13,8 @@ export default function Resume() {
     return (
         <div className="hero notification p-0 mb-0">
             <div className="hero-body p-0">
-                <DownloadCVButton pdfUrl={pdfUrl} />
+                <h1 className="title is-size-2 has-text-centered mt-6">{t("title")}</h1>
+                <DownloadCVButton pdfUrl={pdfUrl} mt={0} mb={6} />
                 <PDFViewer pdfUrl={pdfUrl} />
                 <DownloadCVButton pdfUrl={pdfUrl} />
             </div>

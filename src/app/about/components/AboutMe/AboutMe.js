@@ -21,9 +21,9 @@ const AboutMe = () => {
                         <h1 className='has-text-centered'>{t("aboutsection.title1")}</h1>
                         <h2 className='has-text-centered'>{t("aboutsection.title2")}</h2>
                         <h2>{t("aboutsection.aboutme.subtitle")}</h2>
-                        <p dangerouslySetInnerHTML={{ __html: preventWidows(t("aboutsection.aboutme.content"), locale) }} />
+                        <p className="has-text-justified" dangerouslySetInnerHTML={{ __html: preventWidows(t("aboutsection.aboutme.content"), locale) }} />
                         <h2>{t("aboutsection.hobby.subtitle")}</h2>
-                        <p dangerouslySetInnerHTML={{ __html: preventWidows(t("aboutsection.hobby.content"), locale) }} />
+                        <p className="has-text-justified" dangerouslySetInnerHTML={{ __html: preventWidows(t("aboutsection.hobby.content"), locale) }} />
 
                     </div>
                     <div className="column is-half">
