@@ -14,22 +14,22 @@ const WelcomeSection = () => {
             <div className="container">
                 <div className="columns is-vcentered is-variable">
                     <div className="column is-6-desktop welcome-content">
-                        <p className="welcome-eyebrow">
+                        <p className="title welcome-eyebrow">
                             <span className="wave-emoji" aria-hidden="true">
                                 👋
                             </span>
                             {t("WelcomeSection.Hi")}
                         </p>
 
-                        <h1 className="welcome-title">
+                        <h1 className="title welcome-title">
                             {process.env.NEXT_PUBLIC_NAME_SURNAME}
                         </h1>
 
-                        <h2 className="welcome-role">
+                        <h2 className="subtitle welcome-role">
                             {process.env.NEXT_PUBLIC_JOB}
                         </h2>
 
-                        <p className="welcome-description has-text-justified">
+                        <p className="content is-size-5 welcome-description has-text-justified">
                             {t("WelcomeSection.description")}
                         </p>
 
